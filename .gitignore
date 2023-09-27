@@ -3762,3 +3762,16 @@ node_modules/wrap-ansi/index.js
 node_modules/wrap-ansi/license
 node_modules/wrap-ansi/package.json
 node_modules/wrap-ansi/readme.md
+node_modules/package/.npmignore
+node_modules/package/.travis.yml
+node_modules/package/examples/custom_path.js
+node_modules/package/examples/module.js
+node_modules/package/History.md
+node_modules/package/lib/package.js
+node_modules/package/Makefile
+node_modules/package/package.json
+node_modules/package/Readme.md
+node_modules/package/test/index.test.js
+node_modules/package/test/nested/two/nested.test.js
+node_modules/package/test/package.json
+node_modules/package/test/support/package.json
