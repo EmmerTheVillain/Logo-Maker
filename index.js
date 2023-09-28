@@ -27,7 +27,27 @@ async function generateLogo() {
             'pink'
     ];
 //input section                
-    // text input
+    // shape type input
+    const { shape } = await inquirer.prompt([
+        {
+            name: 'shape',
+            type: 'list',
+            message: 'Select a shape for your logo:',
+            choices: shapeChoices,
+        },
+      ]);
+  
+      // logo color input
+      const { shapeColor } = await inquirer.prompt([
+        {
+            name: 'shapeColor',
+            type: 'list',
+            message: 'Select a color for your logo:',
+            choices: colorChoices,
+        },
+      ]);
+
+// text input
     const { text } = await inquirer.prompt([
         {
             name: 'text',
@@ -51,27 +71,8 @@ async function generateLogo() {
             choices: colorChoices,
 
         },
-    ]);
-  
-    // shape type input
-    const { shape } = await inquirer.prompt([
-        {
-            name: 'shape',
-            type: 'list',
-            message: 'Select a shape for your logo:',
-            choices: shapeChoices,
-        },
-      ]);
-  
-      // logo color input
-      const { shapeColor } = await inquirer.prompt([
-        {
-            type: 'list',
-            name: 'shapeColor',
-            message: 'Select a color for your logo:',
-            choices: colorChoices,
-        },
-      ]);
+    ]);   
+
 //section to create logo
     //shape object
     let logoShape;
