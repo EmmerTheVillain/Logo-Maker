@@ -1,5 +1,6 @@
-const fs = require('fs');
 const inquirer = require('inquirer');
+const fs = require('fs');
+
 const Circle = require('./lib/circle');
 const Triangle = require('./lib/triangle');
 const Square = require('./lib/square');
@@ -25,7 +26,7 @@ async function generateLogo(){
         'square'
     ];
 
-const input = await inquierer.prompt([
+const input = await inquirer.prompt([
     {
         type: 'input',
         name: 'text',
